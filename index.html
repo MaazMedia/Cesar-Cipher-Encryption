@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caesar Cipher Encryption</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Caesar Cipher Encryption</h2>
+    <label for="message">Message</label>
+    <div class="text-area">
+    <textarea id="message" placeholder="Enter your message..."></textarea>
+</div>
+    <label for="shift">Subsitituion To:</label>
+    <input type="number" id="shift" placeholder="Enter shift value...">
+    <button onclick="encrypt()">Encrypt</button>
+    <label for="encrypted" class="encrypted" style="
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+">Encrypted Message:</label>
+    <textarea id="encrypted" class="encrypted-text" readonly></textarea>
+    <div class="btn hidden" id="btn" onclick="myFunction()" style="display: flex;
+    /* justify-content: end; */
+    right: 43%;
+    bottom: 40%;
+    margin: 0 auto;
+    position: absolute;
+    ">📋</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
